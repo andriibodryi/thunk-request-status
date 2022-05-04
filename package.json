@@ -1,0 +1,47 @@
+{
+  "name": "thunk-request-status",
+  "version": "1.0.0",
+  "description": "Utility library for handle thunk request statuses",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriibodryi/thunk-request-statuses.git"
+  },
+  "author": "Andrii Bodryi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andriibodryi/thunk-request-status/issues"
+  },
+  "homepage": "https://github.com/andriibodryi/thunk-request-status#readme",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "react-hooks",
+    "react",
+    "react-native",
+    "request",
+    "redux",
+    "react-redux",
+    "status",
+    "statuses",
+    "redux-thunk"
+  ],
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
+    "@types/react-redux": "^7.1.24",
+    "prettier": "^2.6.2",
+    "react-redux": "^7.2.4",
+    "typescript": "^4.6.3"
+  },
+  "peerDependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
+    "react-redux": "^7.2.4"
+  },
+  "dependencies": {}
+}

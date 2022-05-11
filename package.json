@@ -1,6 +1,6 @@
 {
   "name": "thunk-request-status",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "Utility library for handle thunk request statuses",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

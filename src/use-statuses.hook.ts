@@ -13,22 +13,22 @@ const useRootStatusSelector = (thunk: AsyncThunk) => {
   return useSelector(getThunkRequestStatus(getThunkPrefix(thunk)));
 };
 
+const checkIsSomeThunkEqualOfStatus = (thunk: AsyncThunk, status: string) => {
+  return useRootStatusSelector(thunk) === status;
+};
+
 export const useIsIdle = (thunk: AsyncThunk) => {
-  const status = useRootStatusSelector(thunk);
-  return status === IDLE_STATUS;
+  return checkIsSomeThunkEqualOfStatus(thunk, IDLE_STATUS);
 };
 
 export const useIsLoading = (thunk: AsyncThunk) => {
-  const status = useRootStatusSelector(thunk);
-  return status === PENDING_STATUS;
+  return checkIsSomeThunkEqualOfStatus(thunk, PENDING_STATUS);
 };
 
 export const useIsRejected = (thunk: AsyncThunk) => {
-  const status = useRootStatusSelector(thunk);
-  return status === REJECTED_STATUS;
+  return checkIsSomeThunkEqualOfStatus(thunk, REJECTED_STATUS);
 };
 
 export const useIsFulfilled = (thunk: AsyncThunk) => {
-  const status = useRootStatusSelector(thunk);
-  return status === FULFILLED_STATUS;
+  return checkIsSomeThunkEqualOfStatus(thunk, FULFILLED_STATUS);
 };
